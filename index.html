@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <title></title>
   <script src="https://use.fontawesome.com/a58cfe831b.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="./js/main.js"></script>
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -28,9 +30,9 @@
           <p>Hi, I'm Javed. I'm based in Melbourne, Australia, and I develop web applications. I've worked mostly with Rails and React, but I'm interested in other stacks and always keen to learn new tools. </p>
         </div>
         <div class="intro-child">
-          <p>Have a look at some of my projects below, or follow the links here to get in touch or find out more: </p>
+          <p>Have a look at some of my <a href="#projects">projects</a> below, or follow the links here to get in touch or find out more: </p>
         </div>
-        <div class="intro-child links">
+        <div class="links">
           <a href="https://github.com/javeddc"><i class="fa fa-github fa-3x"></i><span>Github</span></a>
           <a href="https://github.com/javeddc"><i class="fa fa-linkedin-square fa-3x"></i><span>LinkedIn</span></a>
           <a href="mailto:jdecosta@gmail.com?subject=Website Contact"><i class="fa fa-envelope fa-3x"></i><span>Email</span></a>
@@ -40,20 +42,28 @@
 
     <hr>
 
-    <div class="projects">
+    <a name="projects"><div class="projects"></a>
       <h2>Projects:</h2>
       <div id="accordion">
         <h4 class="accordion-toggle">Disnumber</h4>
         <div class="accordion-content">
-          <p>This is a description of the project.</p>
-          <h5>Technologies used:</h5>
-          <p>
+          <h5>Project Description:</h5>
+          <p>Never forget a phone number again!</p>
+          <p>Disnumber is a web app that allows you to turn any phone number into a memorable two-word phrase. You can then give this phrase to others to look up instead of remembering or exchanging long numbers.</p>
+          <p>Disnumber was built as an early project in the General Assembly Web Development Immersive.</p>
+
+          <h5>Built with:</h5>
+          <div class="build-tags">
             <tag><span class="tag_text">Sinatra</span></tag>
             <tag><span class="tag_text">Ruby</span></tag>
-            <tag><span class="tag_text">Flexbox</span></tag>
-          </p>
+            <tag><span class="tag_text">ActiveRecord</span></tag>
+            <tag><span class="tag_text">Heroku</span></tag>
+            <tag><span class="tag_text">Javascript</span></tag>
+            <tag><span class="tag_text">CSS</span></tag>
+          </div>
           <div class="project-links">
-            <span class="fa fa-arrow-circle-right">View Project</span>
+            <a href="https://github.com/javeddc/disnum" target="_blank"><h5>View on Github</h5></a>
+            <a href="http://www.disnumber.com" target="_blank"><h5>See it in action! <span class="fa fa-arrow-circle-right"></span></h5></a>
           </div>
 
         </div>
@@ -73,10 +83,12 @@
     </div>
 
     <hr>
+    <div class="endspace">
+
+    </div>
   </div>
 
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script src="./js/main.js"></script>
+
 </body>
 
 </html>

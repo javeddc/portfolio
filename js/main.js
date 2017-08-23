@@ -8,25 +8,17 @@ $(document).ready(function($) {
 
   var waves = new SineWaves({
     el: document.getElementById('waves'),
-
     speed: 1,
-
     width: function() {
       return $(window).width();
     },
-
     height: function() {
       return $(window).height();
     },
-
-    // ease: 'SineInOut',
-
     ease: function(percent, amplitude) {
       return Math.sin((percent) + 100) * 200;
     },
-
     wavesWidth: '150%',
-
     waves: [
       {
         timeModifier: 4,
@@ -55,25 +47,19 @@ $(document).ready(function($) {
         wavelength: 400
       }
     ],
-
-    // Called on window resize
     resizeEvent: function() {
       var gradient = this.ctx.createLinearGradient(0, 0, this.width, 0);
       gradient.addColorStop(0, "rgba(193, 213, 51, 1)");
       gradient.addColorStop(0.5, "rgba(255, 255, 255, 0.05)");
       gradient.addColorStop(1, "rgba(193, 213, 51, 1)");
-// rgb(193, 213, 51)
       var index = -1;
       var length = this.waves.length;
       while (++index < length) {
         this.waves[index].strokeStyle = gradient;
       }
-
-      // Clean Up
       index = void 0;
       length = void 0;
       gradient = void 0;
     }
   });
-
 });

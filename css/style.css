@@ -354,18 +354,7 @@ header {
   top: -37rem;
   -webkit-transform: translate(0, 8rem);
   width: 100%;
-  /*height: 20rem;*/
 }
-
-/*@media (max-width: 1200px)
-and (orientation: portrait) {
-  #waves {
-
-  }
-  header {
-
-  }
-}*/
 
 @media only screen
 and (min-device-width : 300px)

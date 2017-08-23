@@ -271,7 +271,7 @@ hr {
   display: inline-block;
   cursor: pointer;
   margin: 1rem 4rem -1rem 0;
-  background-color: #afb311;
+  background-color: #c1d533;
   padding: 0 1rem;
   color: #2f465f;
   position: relative;
@@ -289,7 +289,7 @@ hr {
   color: #2f465f;
   position: relative;
   z-index: 1000;
-  opacity: 0.8;
+  opacity: 1;
 }
 
 .accordion-content {
@@ -339,4 +339,36 @@ tag {
 
 .endspace {
   height: 25rem;
+}
+
+header {
+  position: relative;
+}
+
+#waves {
+  position: absolute;
+  z-index: -20;
+  left: 0;
+  opacity: 0.5;
+  top: -37rem;
+  width: 100%;
+  /*height: 20rem;*/
+}
+
+@media (min-width: 600px) {
+  #waves {
+    top: -20rem;
+  }
+}
+
+@media (min-width: 900px) {
+  #waves {
+    top: -17.5rem;
+  }
+}
+
+@media (min-width: 1050px) {
+  #waves {
+    top: -17.5rem;
+  }
 }

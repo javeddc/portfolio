@@ -50,7 +50,7 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 5.5rem;
   line-height: 1.2;
   letter-spacing: -.1rem;
   margin-bottom: 0rem;
@@ -352,34 +352,65 @@ header {
   left: 0;
   opacity: 0.5;
   top: -37rem;
+  -webkit-transform: translate(0, 8rem);
   width: 100%;
   /*height: 20rem;*/
 }
 
-@media (max-width: 1200px)
+/*@media (max-width: 1200px)
 and (orientation: portrait) {
   #waves {
-    display: none;
+
   }
   header {
-    position: inherit;
+
+  }
+}*/
+
+@media only screen
+and (min-device-width : 300px)
+and (max-device-width : 1200px) {
+  #waves {
+    -webkit-transform: translate(0, 0rem);
+    top: -21rem;
+  }
+}
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+  h1 {
+    font-size: 5rem;
+  }
+}
+
+@media only screen
+and (min-device-width : 300px)
+and (max-device-width : 800px)
+and (orientation : landscape) {
+  #waves {
+    top: -21rem;
+    -webkit-transform: translate(0, 15rem);
   }
 }
 
 @media (min-width: 600px) {
   #waves {
+    -webkit-transform: translate(0, 5rem);
     top: -20rem;
   }
 }
 
 @media (min-width: 900px) {
   #waves {
-    top: -17.5rem;
+    -webkit-transform: translate(0, 5rem);
+    top: -18.0rem;
   }
 }
 
 @media (min-width: 1050px) {
   #waves {
+    -webkit-transform: translate(0, 0rem);
     top: -17.5rem;
   }
 }

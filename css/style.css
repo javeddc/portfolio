@@ -356,7 +356,7 @@ header {
   /*height: 20rem;*/
 }
 
-@media (max-width: 900px)
+@media (max-width: 1200px)
 and (orientation: portrait) {
   #waves {
     display: none;
